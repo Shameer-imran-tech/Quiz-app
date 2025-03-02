@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Quiz</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Science Quiz Challenge</h1>
+        <nav>
+            <a href="index.html">Quiz</a>
+            <a href="pages/how-to.html">How to Play</a>
+        </nav>
+    </header>
+
+    <main class="quiz-container">
+        <div id="start-screen" class="screen">
+            <h2>Welcome to the Science Quiz!</h2>
+            <p>Test your knowledge of basic science concepts</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <span id="question-number">Question 1/10</span>
+                <span id="timer">Time: 30s</span>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text">Question text goes here</h2>
+                <div id="options-container">
+                    <!-- Options will be inserted here -->
+                </div>
+            </div>
+<div>
+<button id="prev-btn" class="btn">Prevous Question</button>            
+<button id="next-btn" class="btn">Next Question</button>
+<button id="result-btn" class="btn">Submit Test</button>
+	    
+</div>
+        </div>
+
+        <div id="results-screen" class="screen hidden">
+            <h2>Quiz Complete!</h2>
+            <div id="score-container">
+                <p>Your Score: <span id="score">0</span>/100</p>
+            </div>
+            <button id="restart-btn" class="btn">Try Again</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Science Quiz. All rights reserved.</p>
+    </footer>
+
+ <!-- Load questions first -->
+ <script src="assets/js/questions.js"></script>
+ <!-- Then load quiz logic -->
+ <script src="assets/js/quiz.js"></script>
+</body>
+</html>
